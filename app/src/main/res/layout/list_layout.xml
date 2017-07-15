@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.crickzer.app.crickzer.MainScreen"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:scrollbarThumbHorizontal="@drawable/scn26"
+    tools:scrollbarThumbVertical="@drawable/scn26"
+    tools:scrollbars="vertical" >
+
+</TextView>

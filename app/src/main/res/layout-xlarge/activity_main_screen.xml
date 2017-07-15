@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scn21"
+    tools:context="com.crickzer.app.crickzer.MainScreen">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="246dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="76dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/scn24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="190dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="173dp"
+        android:layout_marginRight="173dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/scn25" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="680dp"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="81dp"
+        android:scrollbarThumbVertical="@drawable/scn26" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="450dp"
+        android:layout_height="400dp"
+        android:layout_alignTop="@+id/listView1"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_toEndOf="@+id/listView1"
+        android:layout_toRightOf="@+id/listView1"
+        android:scrollbarThumbVertical="@drawable/scn27" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "157850896767",
+    "firebase_url": "https://crickzer-12b2f.firebaseio.com",
+    "project_id": "crickzer-12b2f",
+    "storage_bucket": "crickzer-12b2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157850896767:android:092452a056e493e1",
+        "android_client_info": {
+          "package_name": "com.crickzer.app.crickzer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157850896767-7frmcq4eu77va3ebfo3e6278bnnma5is.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crickzer.app.crickzer",
+            "certificate_hash": "e8dcfe7e626d706ea0da64d5ae9ce13618de79ca"
+          }
+        },
+        {
+          "client_id": "157850896767-l2rnlpb5ktu094nlhn74maet3b06cbc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtYFbtC7AX3OhCRlhlwDRvjSgGnj-5t3k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157850896767-l2rnlpb5ktu094nlhn74maet3b06cbc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
