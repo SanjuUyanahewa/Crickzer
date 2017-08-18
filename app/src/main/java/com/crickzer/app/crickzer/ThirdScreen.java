@@ -1,5 +1,6 @@
 package com.crickzer.app.crickzer;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,6 +33,7 @@ public class ThirdScreen extends AppCompatActivity {
         setContentView(R.layout.activity_third_screen);
         Button btnHitData=(Button)findViewById(R.id.hitData);
         Button btnFirstTeam=(Button)findViewById(R.id.btnFirstTeam);
+       Button btnPredict=(Button)findViewById(R.id.btnPredict);
 
         txtResponseList = (TextView)findViewById(R.id.responseList);
         //live matches button click event
@@ -44,6 +46,15 @@ public class ThirdScreen extends AppCompatActivity {
 
                 }
         });
+        btnPredict.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //url of the api-scores
+                Intent predictIntent = new Intent(ThirdScreen.this,PredictOverScreen.class);
+                startActivity(predictIntent);
+            }
+        });
+
         //live score button click event
         btnFirstTeam.setOnClickListener(new View.OnClickListener() {
             @Override

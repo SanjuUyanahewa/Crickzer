@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,6 +39,7 @@ public class MainScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main_screen);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         final String[] myItems1={"Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand","Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand","Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand","Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand"};
         String[] myItems2={"Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand","Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand","Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand","Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand"};
         ArrayAdapter<String> adapter1=new ArrayAdapter<String>(this,R.layout. list_layout,myItems1);
@@ -58,6 +60,10 @@ public class MainScreen extends AppCompatActivity {
                 }
 
         });
+
+
+
+
     }
 
 
