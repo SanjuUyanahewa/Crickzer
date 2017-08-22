@@ -26,7 +26,12 @@
         <activity
             android:name=".ThirdScreen"
             android:screenOrientation="sensorLandscape" />
-        <activity android:name=".PredictOverScreen"></activity>
+        <activity android:name=".PredictOverScreen" />
+        <activity
+            android:name=".RegScreen"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name=".LoginScreen"
+            android:screenOrientation="sensorLandscape" />/>
     </application>
 
 </manifest>
