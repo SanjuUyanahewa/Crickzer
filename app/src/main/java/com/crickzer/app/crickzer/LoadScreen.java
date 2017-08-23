@@ -1,9 +1,9 @@
 package com.crickzer.app.crickzer;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.WindowManager;
 
 public class LoadScreen extends AppCompatActivity {
@@ -18,6 +18,7 @@ public class LoadScreen extends AppCompatActivity {
             @Override
             public void run(){
                 Intent homeintent=  new Intent (LoadScreen.this,MainScreen.class);
+
                 startActivity(homeintent);
                 finish();
             }
@@ -25,3 +26,4 @@ public class LoadScreen extends AppCompatActivity {
     }
 
 }
+
