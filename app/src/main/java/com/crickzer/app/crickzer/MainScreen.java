@@ -47,9 +47,14 @@ public class MainScreen extends AppCompatActivity {
         ListView listView2=(ListView) findViewById(R.id.listView2);
         listView2.setAdapter(adapter2);
 
+        Intent scoreIntent = new Intent(MainScreen.this,ThirdScreen.class);
+        startActivity(scoreIntent);
+
     }
 
     public class JasonMatches extends AsyncTask<String,String,String> {
+
+
         ArrayList countries = new ArrayList<String>(){{
             add("Afghanistan");
             add("Australia");
@@ -98,7 +103,7 @@ public class MainScreen extends AppCompatActivity {
                     Calendar cal = Calendar.getInstance();
                     String currentDate = dateFormat.format(cal.getTime()).toString();
 
-                    if(countries.contains(firstTeam) && countries.contains(secondTeam) && date.contains("2017-08-24")){
+                    if(countries.contains(firstTeam) && countries.contains(secondTeam) && date.contains("2017-08-28")){
                         matchList.put(matchID,firstTeam + " Vs " + secondTeam);
                     };
                 }

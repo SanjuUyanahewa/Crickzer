@@ -2,12 +2,16 @@ package com.crickzer.app.crickzer;
 
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.http.exceptions.UnirestException;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,18 +37,23 @@ public class ThirdScreen extends AppCompatActivity {
         setContentView(R.layout.activity_third_screen);
         Button btnHitData=(Button)findViewById(R.id.hitData);
         Button btnFirstTeam=(Button)findViewById(R.id.btnFirstTeam);
-       Button btnPredict=(Button)findViewById(R.id.btnPredict);
+        Button btnPredict=(Button)findViewById(R.id.btnPredict);
 
         txtResponseList = (TextView)findViewById(R.id.responseList);
         //live matches button click event
         btnHitData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //url of the api-Matches
-
-                new JasonMatches().execute("http://cricapi.com/api/matches/XlPvSB9ReQgIquCbxhaPUDs2NLL2");
-
+                try {
+                    HttpResponse<String> response = Unirest.get("https://dev132-cricket-live-scores-v1.p.mashape.com/matches.php")
+                            .header("X-Mashape-Key", "CxFGdLkI9LmshlLyBwF0GeBVgmtup1Io7c7jsnU0mffvWAqQUA")
+                            .header("Accept", "application/json")
+                            .asString();
+                } catch (UnirestException e) {
+                    e.printStackTrace();
                 }
+
+            }
         });
         btnPredict.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,6 +97,7 @@ public class ThirdScreen extends AppCompatActivity {
                 while ((line=reader.readLine())!=null){
                     buffer.append(line);
                 }
+
                 String cricJason=buffer.toString();
                 JSONObject parentJason=new JSONObject(cricJason);
                 JSONArray arrayJasonCrick=parentJason.getJSONArray("matches");
