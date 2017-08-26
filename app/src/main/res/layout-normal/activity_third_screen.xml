@@ -291,6 +291,14 @@
     </ScrollView>
 
     <Button
+        android:id="@+id/hitData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignTop="@+id/textView8"
+        android:text="Hit" />
+    <Button
         android:id="@+id/btnFirstTeam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -299,6 +307,15 @@
         android:layout_toRightOf="@+id/textView13"
         android:layout_toEndOf="@+id/textView13"
         android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnPredict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_below="@+id/textView11"
+        android:text="prediction" />
 
 
 </RelativeLayout>
