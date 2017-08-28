@@ -30,8 +30,12 @@
         <activity
             android:name=".RegScreen"
             android:screenOrientation="sensorLandscape" />
-        <activity android:name=".LoginScreen"
-            android:screenOrientation="sensorLandscape" />/>
+        <activity
+            android:name=".LoginScreen"
+            android:screenOrientation="sensorLandscape" />
+        />
+        <activity android:name=".PredictionScreen"
+            android:screenOrientation="sensorLandscape" />
     </application>
 
 </manifest>
