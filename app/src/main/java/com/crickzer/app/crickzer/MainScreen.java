@@ -3,6 +3,7 @@ package com.crickzer.app.crickzer;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
@@ -29,6 +30,7 @@ import java.util.Calendar;
 import java.util.HashMap;
 
 public class MainScreen extends AppCompatActivity {
+    private static int SPLASH_TIME_OUT = 4000;
     private static final String TAG = "MyActivity";
     static HashMap<Integer, String> matchList = new HashMap<>();
 
@@ -38,6 +40,17 @@ public class MainScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main_screen);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        new Handler().postDelayed(new Runnable(){
+            @Override
+            public void run(){
+                Intent homeintent=  new Intent (MainScreen.this,ThirdScreen.class);
+
+                startActivity(homeintent);
+                finish();
+            }
+        },SPLASH_TIME_OUT);
+
         new JasonMatches().execute("http://cricapi.com/api/matches/XlPvSB9ReQgIquCbxhaPUDs2NLL2");
 
         //final String[] myItems1={"Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand","Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand","Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand","Sri Lanka Vs India","Sri Lanka Vs New Zealand","Pakistan Vs New Zealand","Sri Lanka Vs South Africa","Australia Vs New Zealand"};

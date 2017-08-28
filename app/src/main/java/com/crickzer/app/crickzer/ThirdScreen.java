@@ -20,13 +20,15 @@ import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
+import java.io  .InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
 public class ThirdScreen extends AppCompatActivity {
+
+    ImageButton myImageButton;
 
     private TextView txtResponseList;
      int ID;
@@ -41,8 +43,21 @@ public class ThirdScreen extends AppCompatActivity {
         Button btnHitData=(Button)findViewById(R.id.hitData);
         Button btnFirstTeam=(Button)findViewById(R.id.btnFirstTeam);
         Button btnPredict=(Button)findViewById(R.id.btnPredict);
-
         txtResponseList = (TextView)findViewById(R.id.responseList);
+
+        myImageButton = (ImageButton) findViewById(R.id.crickzingbtn);
+
+        myImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentLoadNewActivity = new Intent(ThirdScreen.this, LoginScreen.class);
+                startActivity(intentLoadNewActivity);
+            }
+        });
+
+
+
+
         //live matches button click event
         btnHitData.setOnClickListener(new View.OnClickListener() {
             @Override

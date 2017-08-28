@@ -12,5 +12,4 @@ public class PredictionScreen extends AppCompatActivity {
         setContentView(R.layout.activity_prediction_screen);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);}
-    }
 }

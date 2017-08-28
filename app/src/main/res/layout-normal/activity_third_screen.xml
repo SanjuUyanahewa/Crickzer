@@ -7,6 +7,18 @@
     android:background="@drawable/scn38"
     tools:context="com.crickzer.app.crickzer.ThirdScreen">
 
+    <ImageButton
+        android:id="@+id/crickzingbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transt"
+        android:elevation="2dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/btnimg"
+        android:layout_below="@+id/hitData"
+        android:layout_toRightOf="@+id/hitData"
+        android:layout_toEndOf="@+id/hitData" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
@@ -27,6 +39,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:scaleType="centerCrop"
+        android:visibility="invisible"
         app:srcCompat="@drawable/scn36" />
 
     <ImageView
@@ -262,24 +275,13 @@
         android:textStyle="bold|italic" />
 
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/transt"
-        android:elevation="2dp"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/btnimg"
-        android:layout_alignTop="@+id/textView12"
-        android:layout_alignRight="@+id/imageView6"
-        android:layout_alignEnd="@+id/imageView6" />
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageView9"
         android:layout_alignRight="@+id/imageView9"
-        android:layout_alignEnd="@+id/imageView9">
+        android:layout_below="@+id/crickzingbtn"
+        android:visibility="invisible">
 
         <TextView
             android:id="@+id/responseList"
@@ -297,16 +299,19 @@
         android:layout_alignLeft="@+id/imageView4"
         android:layout_alignStart="@+id/imageView4"
         android:layout_alignTop="@+id/textView8"
-        android:text="Hit" />
+        android:text="Hit"
+        android:visibility="invisible" />
+
     <Button
         android:id="@+id/btnFirstTeam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="description"
         android:layout_below="@+id/imageView14"
-        android:layout_toRightOf="@+id/textView13"
+        android:layout_marginTop="24dp"
         android:layout_toEndOf="@+id/textView13"
-        android:layout_marginTop="24dp" />
+        android:layout_toRightOf="@+id/textView13"
+        android:text="description"
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/btnPredict"
@@ -315,7 +320,8 @@
         android:layout_alignEnd="@+id/textView14"
         android:layout_alignRight="@+id/textView14"
         android:layout_below="@+id/textView11"
-        android:text="prediction" />
+        android:text="prediction"
+        android:visibility="invisible" />
 
 
 </RelativeLayout>

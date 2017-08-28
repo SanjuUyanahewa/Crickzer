@@ -12,15 +12,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/scn42"
-        android:layout_alignBottom="@+id/imageButton3"
-        android:layout_toRightOf="@+id/imageButton3"
-        android:layout_toEndOf="@+id/imageButton3"
+        android:layout_alignBottom="@+id/backToLive2"
+        android:layout_toRightOf="@+id/backToLive2"
+        android:layout_toEndOf="@+id/backToLive2"
         android:layout_marginLeft="19dp"
         android:layout_marginStart="19dp"
         android:layout_marginBottom="12dp" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/backToLive2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
@@ -43,8 +43,8 @@
         app:srcCompat="@drawable/scn45"
         android:layout_marginTop="14dp"
         android:layout_below="@+id/imageView20"
-        android:layout_alignLeft="@+id/imageButton3"
-        android:layout_alignStart="@+id/imageButton3"
+        android:layout_alignLeft="@+id/backToLive2"
+        android:layout_alignStart="@+id/backToLive2"
         android:layout_marginLeft="103dp"
         android:layout_marginStart="103dp" />
 
@@ -96,7 +96,7 @@
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="19dp"
         android:ems="10"
         android:hint="Number..."
         android:inputType="phone"
@@ -117,9 +117,8 @@
         android:singleLine="true"
         android:textSize="14sp"
         android:textStyle="italic"
-        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@+id/imageView21"
         android:layout_alignLeft="@+id/editText4"
-        android:layout_alignStart="@+id/editText4"
-        android:layout_marginBottom="16dp" />
+        android:layout_alignStart="@+id/editText4" />
 
 </RelativeLayout>
