@@ -321,7 +321,7 @@
         android:layout_alignRight="@+id/textView14"
         android:layout_below="@+id/textView11"
         android:text="prediction"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
 
 </RelativeLayout>

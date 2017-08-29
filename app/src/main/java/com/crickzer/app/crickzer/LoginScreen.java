@@ -113,7 +113,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
             //if the email and password are not empty
             //displaying a progress dialog
 
-            progressDialog.setMessage("Loaging Please Wait...");
+            progressDialog.setMessage("Loading Please Wait...");
             progressDialog.show();
 
             //logging in the user
